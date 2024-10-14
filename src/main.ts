@@ -1,5 +1,10 @@
 import './style.css'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
-`
+
+import { KanbanBoard } from './components/cards/cards'; 
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    new KanbanBoard();
+});
