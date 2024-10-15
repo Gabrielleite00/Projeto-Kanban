@@ -1,5 +1,19 @@
+@charset "UTF-8";
+
+@import "./styles/variables.css";
+@import "./styles/components/columns.css";
+@import "./styles/components/header.css";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--Monsterrat);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
 }
