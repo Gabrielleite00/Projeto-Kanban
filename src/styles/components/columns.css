@@ -1,0 +1,244 @@
+@import "../../styles/variables.css";
+
+.kanban {
+    display: flex;
+    gap: 2rem;
+    align-self: center;
+    max-width: 1300px;
+}
+
+.kanban-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--light-blue);
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--blue);
+    padding: 1.5rem;
+    position: relative;
+    width: 400px;
+}
+
+.kanban-column:nth-of-type(2) {
+    background-color: var(--light-orange);
+    border: 3px solid var(--orange);
+}
+
+.kanban-column:nth-of-type(3) {
+    background-color: var(--light-green);
+    border: 3px solid var(--green);
+}
+
+.kanban-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kanban-pendentes, .kanban-em-progresso, .kanban-finalizadas {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.kanban-pendentes-number, .kanban-em-progresso-number, .kanban-finalizadas-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 100%;
+    font-size: 0.75rem;
+}
+
+.kanban-em-progresso-number {
+    background-color: var(--orange);
+}
+
+.kanban-finalizadas-number {
+    background-color: var(--green);
+}
+
+.kanban-title h2 {
+    font-size: .9rem;
+    color: var(--black);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.kanban-title h2::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+
+.kanban-column[data-id="1"] h2::before {
+    background-color: var(--blue);
+}
+
+.kanban-column[data-id="2"] h2::before {
+    background-color: var(--orange);
+}
+
+.kanban-column[data-id="3"] h2::before {
+    background-color: var(--green);
+}
+
+
+.add-card {
+    color: var(--blue);
+    background-color: var(--medium-blue);
+    padding: 0 .45rem;
+    border-radius: 5px;
+    font-size: .75rem;
+    cursor: pointer;
+    border: none;
+    transition: all .2s ease;
+}
+
+.add-card:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}   
+
+hr {
+    border: 1px solid var(--blue);
+}
+
+hr[data-id="second-column"] {
+    border: 1px solid var(--orange);
+}
+
+hr[data-id="third-column"] {
+    border: 1px solid var(--green);
+}
+
+.kanban-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.kanban-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--white);
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1);
+    border: 2px solid #80808034;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .75rem;
+}
+
+.badge-tag {
+    background-color: var(--medium-blue);
+    color: var(--blue);
+    font-weight: 600;
+    padding: 0.25rem .75rem;
+    border-radius: 20px;
+}
+
+.btn-excluir {
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.card-description {
+    font-size: 0.8rem;
+}
+
+
+.card-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users img {
+    width: 27px;
+    height: 27px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid var(--white);
+}
+
+.users img:not(:first-child) {
+    margin-left: -10px;
+}
+
+.card-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: .85rem;
+}
+
+.card-icons p {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.card-icons i {
+    color: var(--black);
+}
+
+.kanban-card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.remove-card {
+    padding: .5rem 1rem;
+    background-color: #ff000078;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.move-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.move-card {
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: var(--light-blue);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
