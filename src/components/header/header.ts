@@ -6,7 +6,7 @@ export class Header {
           <h1>KanPlan</h1>
           
           <div class="actions">
-            <button id="filter-button" class="filter">Filter</button>
+            <button id="filter-button" class="filter">Filter by user</button>
             <button id="date-button" class="date">This Week</button>
           
             <div class="avatars">

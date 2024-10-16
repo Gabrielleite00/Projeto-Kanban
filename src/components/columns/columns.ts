@@ -10,7 +10,7 @@ export class Columns {
                     <header class="kanban-title">
                         <div class="kanban-pendentes">
                             <h2>Pendente</h2>
-                            <span class="kanban-pendentes-number">4</span>
+                            <span class="kanban-pendentes-number">${tasks.filter(task => task.status === "pendente").length}</span>
                         </div>
                         <button class="add-card" id="add-pendente">
                             <i class="fa fa-plus" aria-hidden="true"></i>
@@ -26,7 +26,7 @@ export class Columns {
 											task.title,
 											task.description,
 											task.status
-									  )
+									)
 									: ``
 							)
 							.join("")}
@@ -35,8 +35,8 @@ export class Columns {
                 <section class="kanban-column" data-id="2">
                     <header class="kanban-title">
                         <div class="kanban-em-progresso">
-                            <h2>Pendente</h2>
-                            <span class="kanban-em-progresso-number">4</span>
+                            <h2>Em progresso</h2>
+                            <span class="kanban-em-progresso-number">${tasks.filter(task => task.status === "em progresso").length}</span>
                         </div>
                     </header>
                     <hr data-id="second-column"/>
@@ -49,7 +49,7 @@ export class Columns {
 											task.title,
 											task.description,
 											task.status
-									  )
+									)
 									: ``
 							)
 							.join("")}
@@ -58,8 +58,8 @@ export class Columns {
                 <section class="kanban-column" data-id="3">
                     <header class="kanban-title">
                         <div class="kanban-finalizadas">
-                            <h2>Pendente</h2>
-                            <span class="kanban-finalizadas-number">4</span>
+                            <h2>Finalizado</h2>
+                            <span class="kanban-finalizadas-number">${tasks.filter(task => task.status === "finalizado").length}</span>
                         </div>
                     </header>
                     <hr data-id="third-column"/>
