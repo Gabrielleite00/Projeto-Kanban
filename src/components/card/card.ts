@@ -1,4 +1,4 @@
-import { ColumnType } from "../columns/cards-logica";
+import { ColumnType } from "../../types/column.type";
 
 export class Card {
 
@@ -51,7 +51,7 @@ export class Card {
                                 <i class="fa-solid fa-arrow-right-long" style="color: #000000;"></i>
                             </button>
                         `
-                        : status === "finalizada"
+                        : status === "finalizado"
                         ? `
                             <button class="move-card left">
                                 <i class="fa-solid fa-arrow-left-long" style="color: #000000;"></i>

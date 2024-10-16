@@ -1,3 +1,5 @@
+@import "../variables.css";
+
 .header {
 	padding: 15px 20px;
 	background-color: #ffffff;
@@ -7,8 +9,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 1200px;
+	max-width: 1260px;
 	margin: 0 auto;
+	padding: 1rem;
 }
 
 .header h1 {
@@ -20,6 +23,7 @@
 .header .actions {
 	display: flex;
 	align-items: center;
+	gap: 1rem;
 }
 
 .header .actions button {

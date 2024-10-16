@@ -1,0 +1,37 @@
+@import "../../styles/variables.css";
+
+    
+.excluir-modal {
+    border: none;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.25rem;
+    font-family: var(--Monsterrat);
+}
+
+.excluir-modal > p {
+    margin-bottom: 2rem;
+}
+
+.modal-excluir-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.modal-excluir-buttons > button {
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1rem;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal-excluir-buttons > button:nth-child(2) {
+    background-color: var(--strong-green);
+}

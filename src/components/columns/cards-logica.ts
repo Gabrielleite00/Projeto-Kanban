@@ -1,4 +1,4 @@
-export type ColumnType = 'pendente' | 'em progresso' | 'finalizado';
+// export type ColumnType = 'pendente' | 'em progresso' | 'finalizado';
 
 // export class Card {
 //     columnType: ColumnType;
