@@ -31,5 +31,4 @@ export function deleteCard() {
             modalExcluir.close()
         }
     })
-    
 }
