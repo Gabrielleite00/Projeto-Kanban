@@ -6,5 +6,6 @@ export function moveCard() {
 	const btnMoveRight = document.querySelectorAll(".right") as NodeListOf<HTMLButtonElement>;
     btnMoveLeft.forEach((btn) => btn.addEventListener("click", (event) => handleButtonClick(event, "left")));
     btnMoveRight.forEach((btn) => btn.addEventListener("click", (event) => handleButtonClick(event, "right")));
-    deleteCard()
+    deleteCard();
+    window.dispatchEvent(new Event('renderCards'));
 }
