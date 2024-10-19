@@ -1,0 +1,1 @@
+export type Badge = "Design" | "Front-end" | "Back-end" | "UX";

@@ -23,8 +23,10 @@ export class Columns {
 								task.status === "pendente"
 									? cards.render(
 											task.id,
+                                            task.badge,
 											task.title,
 											task.description,
+                                            task.user.image,
 											task.status
 									)
 									: ``
@@ -46,8 +48,10 @@ export class Columns {
 								task.status === "em progresso"
 									? cards.render(
 											task.id,
+                                            task.badge,
 											task.title,
 											task.description,
+                                            task.user.image,
 											task.status
 									)
 									: ``
@@ -69,8 +73,10 @@ export class Columns {
 								task.status === "finalizado"
 									? cards.render(
 											task.id,
+                                            task.badge,
 											task.title,
 											task.description,
+                                            task.user.image,
 											task.status
 									  )
 									: ``

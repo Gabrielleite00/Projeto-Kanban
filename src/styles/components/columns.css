@@ -242,3 +242,24 @@ hr[data-id="third-column"] {
     border-radius: 10px;
     cursor: pointer;
 }
+
+.blue {
+    background-color: var(--blue-two);
+    color: var(--black);
+}
+
+.red {
+    background-color: var(--light-red);
+    color: var(--black);
+}
+
+.orange {
+    background-color: var(--orange);
+    color: var(--black);
+}
+
+.green {
+    background-color: var(--green);
+    color: var(--black);
+}
+

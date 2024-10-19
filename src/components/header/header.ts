@@ -7,6 +7,7 @@ export class Header {
           
           <div class="actions">
             <button id="filter-button" class="filter">Filter by user</button>
+            
             <button id="date-button" class="date">This Week</button>
           
             <div class="avatars">
