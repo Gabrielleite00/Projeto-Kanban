@@ -2,7 +2,7 @@
 
 .header {
 	padding: 15px 20px;
-	background-color: #ffffff;
+	background-color: #f0f8ff;
 }
 
 .header-container {
@@ -40,16 +40,33 @@
 	transition: background-color 0.3s, border-color 0.3s;
 }
 
-.filter-by-badge {
+.filter-by-badge, .filter-by-user {
 	display: flex;
 	padding: 1rem;
-	gap: 3rem;
-	border: 1px solid #000;
+	gap: 2rem;
+	border: #ccc 1px solid;
 }
 
 .header .actions button:hover {
 	background-color: #f0f0f0;
 	border-color: #ccc;
+}
+
+.badges, .users {
+	display: flex;
+	gap: 1rem;
+}
+
+.badge, .user {
+	background-color: #f0f8ff;
+	border: 1px solid #e0e0e0;
+	padding: 8px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.badge:hover, user:hover {
+	background-color: #e0f0ff;
 }
 
 .header .avatars {
@@ -61,11 +78,34 @@
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
-	margin-left: -10px;
+	margin-left: -25px;
 	border: 2px solid #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+}
+
+.header .avatar-1 {
+	background-image: url('https://avatars.githubusercontent.com/u/123703672?v=4');
+}
+
+.header .avatar-2 {
+	background-image: url('https://avatars.githubusercontent.com/u/137360936?v=4');
+}
+
+.header .avatar-3 {
+	background-image: url('https://avatars.githubusercontent.com/u/70522543?v=4');
+}
+
+.header .avatar-4 {
+	background-image: url('https://avatars.githubusercontent.com/u/150956309?v=4');
+}
+
+.header .avatar:hover {
+	transform: scale(1.3);
 }
 
 .header .avatar.plus {
