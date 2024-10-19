@@ -5,6 +5,8 @@
     gap: 2rem;
     align-self: center;
     max-width: 1300px;
+    border-radius: 10px;
+    padding: .5rem;
 }
 
 .kanban-column {
@@ -17,7 +19,7 @@
     border: 3px solid var(--blue);
     padding: 1.5rem;
     position: relative;
-    width: 400px;
+    width: 382px;
 }
 
 .kanban-column:nth-of-type(2) {
@@ -124,142 +126,3 @@ hr[data-id="third-column"] {
     flex-direction: column;
     gap: 1rem;
 }
-
-.kanban-card {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: var(--white);
-    border-radius: 14px;
-    padding: 1.5rem;
-    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1);
-    border: 2px solid #80808034;
-}
-
-.badge {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: .75rem;
-}
-
-.badge-tag {
-    background-color: var(--medium-blue);
-    color: var(--blue);
-    font-weight: 600;
-    padding: 0.25rem .75rem;
-    border-radius: 20px;
-}
-
-.btn-excluir {
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.card-title {
-    font-size: 1rem;
-}
-
-.card-description {
-    font-size: 0.8rem;
-}
-
-
-.card-infos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.users img {
-    width: 27px;
-    height: 27px;
-    border-radius: 100%;
-    object-fit: cover;
-    border: 2px solid var(--white);
-}
-
-.users img:not(:first-child) {
-    margin-left: -10px;
-}
-
-.card-icons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: .85rem;
-}
-
-.card-icons p {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.card-icons i {
-    color: var(--black);
-}
-
-.kanban-card-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.remove-card {
-    padding: .5rem 1rem;
-    background-color: #ff000078;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.move-buttons {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    justify-content: space-between;
-}
-
-.move-card {
-    width: 100%;
-    padding: .5rem 1rem;
-    background-color: var(--light-blue);
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.blue {
-    background-color: var(--blue-two);
-    color: var(--black);
-}
-
-.red {
-    background-color: var(--light-red);
-    color: var(--black);
-}
-
-.orange {
-    background-color: var(--orange);
-    color: var(--black);
-}
-
-.green {
-    background-color: var(--green);
-    color: var(--black);
-}
-

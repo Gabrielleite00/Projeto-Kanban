@@ -28,8 +28,6 @@ export function createCard() {
             tasks.push(task)
         }
 
-        console.log(tasks)
-
         form.reset();
 
         updateKanban(tasks);
@@ -48,7 +46,7 @@ function getSelectedUserPhoto(userName: string): string {
         case "daniel":
             userPicture =  "https://avatars.githubusercontent.com/u/137360936?v=4"
             break;
-        case "debora":
+        case "débora":
             userPicture =  "https://avatars.githubusercontent.com/u/150956309?v=4"
             break;
     

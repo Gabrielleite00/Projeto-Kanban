@@ -1,130 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "../variables.css";
-
-* {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #7bb0cf, #036a8a);
-}
-
-.kanban {
-    display: flex;
-    gap: 14px;
-    padding: 24px;
-    width: 100%;
-    height: 90vh;
-    overflow-x: auto;
-}
-
-.kanban-column {
-    display: flex;
-    flex-direction: column;
-    margin-left: 55px;
-    gap: 18px;
-    height: 100%;
-    overflow-y: auto;
-    background-color: #39393a;
-    border-radius: 12px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    overflow: hidden;
-    position: relative;
-    min-width: 330px;
-}
-
-.kanban-column::after {
-    position: absolute;
-    content: '';
-    height: 5px;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-.kanban-column[data-id="1"]::after {
-    background-color: #ee0000;
-}
-
-.kanban-column[data-id="2"]::after {
-    background-color: #fde400;
-}
-
-.kanban-column[data-id="3"]::after {
-    background-color: #009607;
-}
-
-
-.kanban-title {
-    display: flex;
-    justify-content: space-between;
-}
-
-.kanban-title h2 {
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 600;
-   
-}
-
-.add-card {
-    color: #ffffff;
-    font-size: 25px;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-}
-
-.kanban-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
 
 .kanban-card {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    background-color: #ababab;
+    gap: 1rem;
+    background-color: var(--white);
     border-radius: 14px;
-    padding: 10px;
+    padding: 1.5rem;
     box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    border: 2px solid #80808034;
 }
 
 .badge {
-    color: #ffffff;
-    width: fit-content;
-    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .75rem;
+}
+
+.badge-tag {
+    background-color: var(--medium-blue);
+    color: var(--blue);
     font-weight: 600;
-    padding: 4px 8px;
-    border-radius: 12px;
+    padding: 0.25rem .75rem;
+    border-radius: 20px;
 }
 
-
-
-.badge.high {
-    background-color: #be0000;
+.btn-excluir {
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
-.badge.medium {
-    background-color: #be5600;
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.badge.low {
-    background-color: #1ba001;
+.card-title {
+    font-size: 1rem;
 }
+
+.card-description {
+    font-size: 0.8rem;
+}
+
 
 .card-infos {
     display: flex;
@@ -132,25 +54,86 @@ body {
     align-items: center;
 }
 
+.users img {
+    width: 27px;
+    height: 27px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid var(--white);
+}
+
+.users img:not(:first-child) {
+    margin-left: -10px;
+}
+
 .card-icons {
     display: flex;
-    gap: 18px;
+    align-items: center;
+    gap: 1rem;
+    font-size: .85rem;
+}
+
+.card-icons p {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .card-icons i {
-    color: #ffffff;
+    color: var(--black);
 }
 
-.user img {
-    width: 42px;
-    height: 42px;
-    border-radius: 100%;
-    object-fit: cover;
+.kanban-card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-
-.cards-hover {
-    background-color: #eaeffa;
-    border-radius: 8px;
+.remove-card {
+    padding: .5rem 1rem;
+    background-color: #ff000078;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
+.move-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.move-card {
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: var(--light-blue);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.blue {
+    background-color: var(--blue-two);
+    color: var(--black);
+}
+
+.red {
+    background-color: var(--light-red);
+    color: var(--black);
+}
+
+.orange {
+    background-color: var(--orange);
+    color: var(--black);
+}
+
+.green {
+    background-color: var(--green);
+    color: var(--black);
+}

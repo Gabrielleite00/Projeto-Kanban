@@ -2,6 +2,7 @@
 
 @import "./styles/variables.css";
 @import "./styles/components/columns.css";
+@import "./styles/components/cards.css";
 @import "./styles/components/header.css";
 @import "./styles/components/modal-excluir.css";
 @import "./styles/components/form.css";
@@ -17,5 +18,4 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
 }

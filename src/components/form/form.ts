@@ -5,7 +5,7 @@ export class Form {
         this.users = [
             { name: 'Aridan', value: 'aridan' },
             { name: 'Daniel', value: 'daniel' },
-            { name: 'Débora', value: 'debora' },
+            { name: 'Débora', value: 'débora' },
             { name: 'Gabriel', value: 'gabriel' },
         ]
     }

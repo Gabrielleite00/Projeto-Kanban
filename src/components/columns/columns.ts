@@ -78,7 +78,7 @@ export class Columns {
 											task.description,
                                             task.user.image,
 											task.status
-									  )
+                                        )
 									: ``
 							)
 							.join("")}
