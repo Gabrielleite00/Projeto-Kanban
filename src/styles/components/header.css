@@ -9,9 +9,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 1260px;
+	max-width: 1215px;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 1.5rem;
+	background-color: var(--light-grey-bg);
+	border-radius: 10px;
 }
 
 .header h1 {
@@ -63,6 +65,7 @@
 	border: 2px solid #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	object-fit: cover;
+	cursor: pointer;
 }
 
 .header .avatar.plus {
