@@ -38,6 +38,13 @@
 	transition: background-color 0.3s, border-color 0.3s;
 }
 
+.filter-by-badge {
+	display: flex;
+	padding: 1rem;
+	gap: 3rem;
+	border: 1px solid #000;
+}
+
 .header .actions button:hover {
 	background-color: #f0f0f0;
 	border-color: #ccc;
@@ -49,8 +56,8 @@
 }
 
 .header .avatar {
-	width: 35px;
-	height: 35px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
 	margin-left: -10px;
 	border: 2px solid #fff;

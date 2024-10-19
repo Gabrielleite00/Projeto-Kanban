@@ -1,7 +1,13 @@
+import { Badge } from "../types/badges.type";
+
 export interface Task {
     id: number;
-    user: string;
+    user: {
+        name: string,
+        image: string
+    }
     title: string;
     description: string;
+    badge: Badge;
     status: string;
 }

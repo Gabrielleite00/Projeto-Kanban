@@ -28,9 +28,10 @@ export class Form {
                     <div class="form__field">
                         <label for="task-badge" class="field__label">Badge</label>
                         <select id="task-badge" name="task-badge" class="field__input" required>
-                            <option value="frontend">Frontend</option>
-                            <option value="backend">Backend</option>
-                            <option value="ux">UX</option>
+                            <option value="Design">Design</option>
+                            <option value="Front-end">Front-end</option>
+                            <option value="Back-end">Back-end</option>
+                            <option value="UX">UX</option>
                         </select>
                     </div>
 

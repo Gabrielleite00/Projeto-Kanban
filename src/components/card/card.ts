@@ -2,11 +2,33 @@ import { ColumnType } from "../../types/column.type";
 
 export class Card {
 
-	render(id: number, title: string, description: string, status: ColumnType): string {
+    getBadgeColor(badge: string): string {
+        let badgeColor: string = ""
+        switch (badge) {
+            case "design":
+                badgeColor = "blue"
+                break;
+            case "ux":
+                badgeColor = "orange"
+                break;
+            case "front-end":
+                badgeColor = "green"
+                break;
+            case "back-end":
+                badgeColor = "red"
+                break;
+        
+            default:
+                break;
+        }
+        return badgeColor
+    }
+
+	render(id: number, badge: string, title: string, description: string, picture: string, status: ColumnType): string {
 		return `
             <div class="kanban-card" data-id=${id}>
                 <div class="badge">
-                    <span class="badge-tag">Design</span>
+                    <span class="badge-tag ${this.getBadgeColor(badge.toLowerCase())}">${badge}</span>
                     <button class="btn-excluir">
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </button>
@@ -22,10 +44,7 @@ export class Card {
 
                 <div class="card-infos">
                     <div class="users">
-                        <img src="https://avatars.githubusercontent.com/u/123703672?v=4" alt="Avatar 1" class="avatar">
-                        <img src="https://avatars.githubusercontent.com/u/137360936?v=4" alt="Avatar 2" class="avatar">
-                        <img src="https://avatars.githubusercontent.com/u/70522543?v=4" alt="Avatar 3" class="avatar">
-                        <img src="https://avatars.githubusercontent.com/u/150956309?v=4" alt="Avatar 3" class="avatar">
+                        <img src="${picture}" alt="Profile picture">
                     </div>
                     
                     <div class="card-icons">
