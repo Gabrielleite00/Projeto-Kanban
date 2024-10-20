@@ -22,12 +22,7 @@ export class Columns {
 							.map((task) =>
 								task.status === "pendente"
 									? cards.render(
-											task.id,
-                                            task.badge,
-											task.title,
-											task.description,
-                                            task.user.image,
-											task.status
+											task
 									)
 									: ``
 							)
@@ -47,12 +42,7 @@ export class Columns {
 							.map((task) =>
 								task.status === "em progresso"
 									? cards.render(
-											task.id,
-                                            task.badge,
-											task.title,
-											task.description,
-                                            task.user.image,
-											task.status
+											task
 									)
 									: ``
 							)
@@ -72,12 +62,7 @@ export class Columns {
 							.map((task) =>
 								task.status === "finalizado"
 									? cards.render(
-											task.id,
-                                            task.badge,
-											task.title,
-											task.description,
-                                            task.user.image,
-											task.status
+											task
                                         )
 									: ``
 							)
