@@ -11,6 +11,7 @@ export const tasks: Task[] = [
 		description: "Estudar os decorators @Input e @Output",
 		badge: "Design",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 2,
@@ -22,6 +23,7 @@ export const tasks: Task[] = [
 		description: "Criar o componente modal que será chamado ao clicar no botão de adicionar tarefa",
 		badge: "Design",
 		status: "em progresso",
+		createdAt: new Date(),
 	},
 	{
 		id: 3,
@@ -33,5 +35,6 @@ export const tasks: Task[] = [
 		description: "Revisar os conceitos relacionados a interfaces e tipos personalizados",
 		badge: "Design",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 ];
