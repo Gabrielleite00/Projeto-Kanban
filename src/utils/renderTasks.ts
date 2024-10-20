@@ -2,7 +2,8 @@ import { Task } from "../interfaces/task.interface";
 import { body, columns, form, header, modalExcluir } from "../main";
 import { createCard } from "./createCard";
 import { deleteCard } from "./deleteCard";
-import { filter } from "./filterByUser";
+import { filterByTag } from "./filterByTag";
+import { filterByUser } from "./filterByUser";
 import { moveCard } from "./moveCard";
 
 export function renderUI(tasks: Task[]) {
@@ -19,6 +20,7 @@ export function renderUI(tasks: Task[]) {
 		moveCard();
 		deleteCard();
 		createCard();
-		filter();
+		filterByUser();
+		filterByTag();
 	}
 }

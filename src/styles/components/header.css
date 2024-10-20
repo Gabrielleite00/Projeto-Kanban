@@ -1,8 +1,7 @@
 @import "../variables.css";
 
 .header {
-	padding: 15px 20px;
-	background-color: #f0f8ff;
+	padding: 1rem;
 }
 
 .header-container {
@@ -11,13 +10,23 @@
 	align-items: center;
 	max-width: 1215px;
 	margin: 0 auto;
-	padding: 1.5rem;
+	padding: 1.5rem 3rem;
 	background-color: var(--light-grey-bg);
 	border-radius: 10px;
 }
 
+.title-container {
+	display: flex;
+	align-items: center;
+	gap: .75rem;
+}
+
+.style-icon {
+	font-size: 1.85rem;
+}
+
 .header h1 {
-	font-size: 24px;
+	font-size: 1.85rem;
 	font-weight: bold;
 	color: #242a41;
 }
@@ -26,6 +35,28 @@
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+}
+
+.divider {
+	background-color: var(--grey-two);
+	height: 40px;
+	width: 1px;
+	margin: 0 1rem;
+}
+
+.user-filter, .tag-filter {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.5rem;
+}
+
+.user-filter {
+	margin-left: auto;
+}
+
+.user-filter > span {
+	padding-right: 25px;
 }
 
 .header .actions button {
@@ -52,26 +83,10 @@
 	border-color: #ccc;
 }
 
-.badges, .users {
-	display: flex;
-	gap: 1rem;
-}
-
-.badge, .user {
-	background-color: #f0f8ff;
-	border: 1px solid #e0e0e0;
-	padding: 8px 12px;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.badge:hover, user:hover {
-	background-color: #e0f0ff;
-}
-
 .header .avatars {
 	display: flex;
 	align-items: center;
+	gap: 1.25rem;
 }
 
 .header .avatar {
@@ -85,27 +100,11 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
-	transition: transform 0.3s ease-in-out;
-}
-
-.header .avatar-1 {
-	background-image: url('https://avatars.githubusercontent.com/u/123703672?v=4');
-}
-
-.header .avatar-2 {
-	background-image: url('https://avatars.githubusercontent.com/u/137360936?v=4');
-}
-
-.header .avatar-3 {
-	background-image: url('https://avatars.githubusercontent.com/u/70522543?v=4');
-}
-
-.header .avatar-4 {
-	background-image: url('https://avatars.githubusercontent.com/u/150956309?v=4');
+	transition: transform 0.2s ease-in-out;
 }
 
 .header .avatar:hover {
-	transform: scale(1.3);
+	transform: scale(1.1);
 }
 
 .header .avatar.plus {
@@ -117,3 +116,21 @@
 	color: #616161;
 	margin-left: -10px;
 }
+
+.tags {
+	display: flex;
+	align-items: center;
+	gap: .75rem;
+}
+
+.tags > .badge-tag {
+	cursor: pointer;
+	transition: opacity .2s ease;
+	border: none;
+}
+
+.tags > .badge-tag:hover {
+	opacity: .7;
+}
+
+
