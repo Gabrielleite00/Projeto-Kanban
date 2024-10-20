@@ -1,0 +1,64 @@
+@import "../../styles/variables.css";
+
+* {
+    font-family: var(--Monsterrat);
+}
+
+.edit-modal {
+    margin: auto;
+    min-width: 300px;
+    border-radius: 16px;
+    border: 2px solid;
+    padding: 32px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 2px solid;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.modal__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.form__title {}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.field__label {
+    font-weight: 500;
+}
+
+.field__input {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.field__input--text-area {
+    resize: none;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.form__actions {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.form__actions > button {
+    width: 100%;
+}
