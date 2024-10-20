@@ -1,6 +1,7 @@
 import { tasks } from "../data/data";
 import { Badge } from "../types/badges.type";
 import { updateKanban } from "./updateKanban";
+import { saveTasksToLocalStorage } from "./storageUtils";
 
 export function editCard() {
     const editForm = document.querySelector('#editar-modal') as HTMLFormElement
@@ -39,6 +40,7 @@ export function editCard() {
                 badge: taskBadge.value as Badge
             }
             
+            saveTasksToLocalStorage(tasks)
             updateKanban(tasks)
         }
 
@@ -50,5 +52,3 @@ export function editCard() {
         editModal.close();
     })
 }
-
-

@@ -1,5 +1,6 @@
 import { tasks } from "../data/data";
 import { updateKanban } from "./updateKanban";
+import { saveTasksToLocalStorage } from "./storageUtils";
 
 export function deleteCard() {
     const btnExcluir = document.querySelectorAll(".btn-excluir")
@@ -27,6 +28,7 @@ export function deleteCard() {
         const index = tasks.findIndex(item => item.id === taskId)            
         if (index !== -1) {
             tasks.splice(index, 1)
+            saveTasksToLocalStorage(tasks)
             updateKanban(tasks)
             modalExcluir.close()
         }
