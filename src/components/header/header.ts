@@ -21,7 +21,9 @@ export class Header {
       avatarsContainer.innerHTML = this.data
         .map(
           (user) =>
-            `<img src="${user.image}" alt="${user.name}" class="avatar js-avatar" data-name="${user.name}">`
+          `
+            <img src="${user.image}" alt="${user.name}" class="avatar js-avatar" data-name="${user.name}">
+          `
         )
         .join("");
     }
@@ -34,17 +36,26 @@ export class Header {
     return `
       <header class="header">
         <div class="header-container">
-          <h1>KanPlan</h1>
-          
-          <div class="actions">
-            <button id="filter-button" class="filter">Filter by user</button>
-            
-            <button id="date-button" class="date">This Week</button>
-          
-            <div class="avatars"></div>
-          
-            <button id="share-button">Share</button>
+          <div class="title-container">
+            <i class="fa-solid fa-table-columns style-icon"></i>
+            <h1>KanPlan</h1>
           </div>
+
+          <div class="user-filter">
+            <div class="avatars"></div>
+          </div>
+
+          <div class="divider"></div>
+          
+          <div class="tag-filter">
+            <div class="tags">
+              <button class="badge-tag blue js-tag" data-tag="Design">Design</button>
+              <button class="badge-tag green js-tag" data-tag="Front-end">Front-end</button>
+              <button class="badge-tag red js-tag" data-tag="Back-end">Back-end</button>
+              <button class="badge-tag orange js-tag" data-tag="UX">UX</button>
+            </div>
+          </div>
+
         </div>
       </header>
     `;
