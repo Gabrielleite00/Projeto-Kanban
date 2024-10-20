@@ -15,13 +15,9 @@ export function renderUI(tasks: Task[]) {
 		body.innerHTML += form.render();
 		body.innerHTML += editForm.render()
 
-
 		window.addEventListener("renderCards", () => {
 			form.addEventListeners();
 		});
-
-
-
 
 		editCard();
 		moveCard();
