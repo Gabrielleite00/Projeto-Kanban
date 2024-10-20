@@ -62,6 +62,7 @@ export const tasks: Task[] = [
 		description: "Organizar o CSS para garantir consistência de design",
 		badge: "Design",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 8,
@@ -70,6 +71,7 @@ export const tasks: Task[] = [
 		description: "Projetar e desenvolver a nova página inicial",
 		badge: "Front-end",
 		status: "em progresso",
+		createdAt: new Date(),
 	},
 	{
 		id: 9,
@@ -78,6 +80,7 @@ export const tasks: Task[] = [
 		description: "Escrever testes para validar a lógica do backend",
 		badge: "Back-end",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 10,
@@ -86,6 +89,7 @@ export const tasks: Task[] = [
 		description: "Explorar Material UI e Tailwind CSS",
 		badge: "Design",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 11,
@@ -94,6 +98,7 @@ export const tasks: Task[] = [
 		description: "Analisar heurísticas de usabilidade",
 		badge: "UX",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 12,
@@ -102,6 +107,7 @@ export const tasks: Task[] = [
 		description: "Resolver problemas com o layout responsivo",
 		badge: "Front-end",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 13,
@@ -110,6 +116,7 @@ export const tasks: Task[] = [
 		description: "Configurar pipeline de deploy automático",
 		badge: "Back-end",
 		status: "em progresso",
+		createdAt: new Date(),
 	},
 	{
 		id: 14,
@@ -127,6 +134,7 @@ export const tasks: Task[] = [
 		description: "Adicionar campo de pesquisa com filtros dinâmicos",
 		badge: "Front-end",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 16,
