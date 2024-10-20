@@ -8,6 +8,7 @@ export const tasks: Task[] = [
 		description: "Estudar os decorators @Input e @Output",
 		badge: "Design",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 2,
@@ -16,6 +17,7 @@ export const tasks: Task[] = [
 		description: "Criar o componente modal chamado ao clicar no botão de adicionar tarefa",
 		badge: "Front-end",
 		status: "em progresso",
+		createdAt: new Date(),
 	},
 	{
 		id: 3,
@@ -24,6 +26,7 @@ export const tasks: Task[] = [
 		description: "Revisar conceitos relacionados a interfaces e tipos personalizados",
 		badge: "Back-end",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 4,
@@ -32,6 +35,7 @@ export const tasks: Task[] = [
 		description: "Revisar conceitos de acessibilidade e design inclusivo",
 		badge: "UX",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 5,
@@ -40,6 +44,7 @@ export const tasks: Task[] = [
 		description: "Integrar a autenticação no backend com JWT",
 		badge: "Back-end",
 		status: "em progresso",
+		createdAt: new Date(),
 	},
 	{
 		id: 6,
@@ -48,6 +53,7 @@ export const tasks: Task[] = [
 		description: "Adicionar validações visuais ao formulário de login",
 		badge: "UX",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 7,
@@ -56,6 +62,7 @@ export const tasks: Task[] = [
 		description: "Organizar o CSS para garantir consistência de design",
 		badge: "Design",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 8,
@@ -64,6 +71,7 @@ export const tasks: Task[] = [
 		description: "Projetar e desenvolver a nova página inicial",
 		badge: "Front-end",
 		status: "em progresso",
+		createdAt: new Date(),
 	},
 	{
 		id: 9,
@@ -72,6 +80,7 @@ export const tasks: Task[] = [
 		description: "Escrever testes para validar a lógica do backend",
 		badge: "Back-end",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 10,
@@ -80,6 +89,7 @@ export const tasks: Task[] = [
 		description: "Explorar Material UI e Tailwind CSS",
 		badge: "Design",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 11,
@@ -88,6 +98,7 @@ export const tasks: Task[] = [
 		description: "Analisar heurísticas de usabilidade",
 		badge: "UX",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 12,
@@ -96,6 +107,7 @@ export const tasks: Task[] = [
 		description: "Resolver problemas com o layout responsivo",
 		badge: "Front-end",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 13,
@@ -104,6 +116,7 @@ export const tasks: Task[] = [
 		description: "Configurar pipeline de deploy automático",
 		badge: "Back-end",
 		status: "em progresso",
+		createdAt: new Date(),
 	},
 	{
 		id: 14,
@@ -112,6 +125,7 @@ export const tasks: Task[] = [
 		description: "Criar protótipos para a nova funcionalidade",
 		badge: "Design",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 15,
@@ -120,6 +134,7 @@ export const tasks: Task[] = [
 		description: "Adicionar campo de pesquisa com filtros dinâmicos",
 		badge: "Front-end",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 16,
@@ -128,6 +143,7 @@ export const tasks: Task[] = [
 		description: "Escrever documentação clara e objetiva para a API REST",
 		badge: "Back-end",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 17,
@@ -136,6 +152,7 @@ export const tasks: Task[] = [
 		description: "Aprender sobre design centrado no usuário",
 		badge: "UX",
 		status: "em progresso",
+		createdAt: new Date(),
 	},
 	{
 		id: 18,
@@ -144,6 +161,7 @@ export const tasks: Task[] = [
 		description: "Separar lógica de negócios dos componentes de UI",
 		badge: "Front-end",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 19,
@@ -152,6 +170,7 @@ export const tasks: Task[] = [
 		description: "Padronizar componentes e estilos",
 		badge: "Design",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	{
 		id: 20,
@@ -160,6 +179,7 @@ export const tasks: Task[] = [
 		description: "Melhorar a performance com Redis",
 		badge: "Back-end",
 		status: "em progresso",
+		createdAt: new Date(),
 	},
 	{
 		id: 21,
@@ -168,6 +188,7 @@ export const tasks: Task[] = [
 		description: "Verificar conformidade com WCAG",
 		badge: "UX",
 		status: "finalizado",
+		createdAt: new Date(),
 	},
 	{
 		id: 22,
@@ -176,6 +197,7 @@ export const tasks: Task[] = [
 		description: "Adicionar tema escuro na aplicação",
 		badge: "Front-end",
 		status: "pendente",
+		createdAt: new Date(),
 	},
 	// Continue adicionando mais tarefas semelhantes até atingir 30+
 ];

@@ -6,6 +6,7 @@
 @import "./styles/components/header.css";
 @import "./styles/components/modal-excluir.css";
 @import "./styles/components/form.css";
+@import "./styles/components/edit-form.css";
 
 * {
   margin: 0;

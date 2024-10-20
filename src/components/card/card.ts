@@ -1,4 +1,4 @@
-import { ColumnType } from "../../types/column.type";
+import { Task } from "../../interfaces/task.interface";
 
 export class Card {
 
@@ -24,53 +24,51 @@ export class Card {
         return badgeColor
     }
 
-	render(id: number, badge: string, title: string, description: string, picture: string, status: ColumnType): string {
+	render(task: Task): string {
 		return `
-            <div class="kanban-card" data-id=${id}>
-                <div class="badge">
-                    <span class="badge-tag ${this.getBadgeColor(badge.toLowerCase())}">${badge}</span>
-                    <button class="btn-excluir">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
-                    </button>
+            <div class="kanban-card" data-id=${task.id}>
+                <div class="kanban-card__header">
+                    <span class="badge-tag ${this.getBadgeColor(task.badge.toLowerCase())}">${task.badge}</span>
+                    <div class="header__btns">
+                        <button class="btn-excluir">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+
+                        <button class="btn-editar">
+                            <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="card">
+
                     <h2 class="card-title">
-                        ${title}
+                        ${task.title}
                     </h2>
                     <p class="card-description">
-                        ${description}
+                        ${task.description}
                     </p>
                 </div>
 
                 <div class="card-infos">
                     <div class="users">
-                        <img src="${picture}" alt="Profile picture">
+                        <img src="${task.user.image}" alt="Foto de ${task.user.name}">
                     </div>
-                    
-                    <div class="card-icons">
-                        <p>
-                            <i class="fa-regular fa-comment-dots" style="color: #000000;"></i>
-                            <span>1</span>
-                        </p>
-
-                        <p>
-                            <i class="fa-solid fa-paperclip" style="color: #000000;"></i>
-                            <span>files</span>
-                        </p>
-                    </div>
-
+                    <span class="card-date">
+                        <i class="fa-regular fa-calendar"></i>
+                        ${Intl.DateTimeFormat('pt-BR').format(task.createdAt)}
+                    </span>
                 </div>
                 
                 <div class="kanban-card-buttons">
                     <div class="move-buttons">                                    
                         
-                        ${ status === "pendente"
+                        ${ task.status === "pendente"
                         ? `
                             <button class="move-card right">
                                 <i class="fa-solid fa-arrow-right-long" style="color: #000000;"></i>
                             </button>
                         `
-                        : status === "finalizado"
+                        : task.status === "finalizado"
                         ? `
                             <button class="move-card left">
                                 <i class="fa-solid fa-arrow-left-long" style="color: #000000;"></i>

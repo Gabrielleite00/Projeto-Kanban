@@ -22,7 +22,8 @@ export function createCard() {
                     name: user.toString(),
                     image: getSelectedUserPhoto(user.toString())
                 },
-                status: 'pendente'
+                status: 'pendente',
+                createdAt: new Date()
             }
 
             tasks.push(task)

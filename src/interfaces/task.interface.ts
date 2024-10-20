@@ -10,4 +10,5 @@ export interface Task {
     description: string;
     badge: Badge;
     status: string;
+    createdAt: Date
 }
