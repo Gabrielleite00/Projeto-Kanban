@@ -1,6 +1,7 @@
 import { tasks } from "../data/data";
 import { Badge } from "../types/badges.type";
 import { updateKanban } from "./updateKanban";
+import { saveTasksToLocalStorage } from "./storageUtils";
 
 export function createCard() {
     const form = document.querySelector('#adicionar-modal') as HTMLFormElement
@@ -27,6 +28,7 @@ export function createCard() {
             }
 
             tasks.push(task)
+            saveTasksToLocalStorage(tasks);
         }
 
         form.reset();
