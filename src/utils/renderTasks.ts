@@ -1,4 +1,6 @@
+import { tasks } from "../data/data";
 import { Task } from "../interfaces/task.interface";
+// import { Task } from "../interfaces/task.interface";
 import { body, columns, editForm, form, header, modalExcluir } from "../main";
 import { createCard } from "./createCard";
 import { deleteCard } from "./deleteCard";
