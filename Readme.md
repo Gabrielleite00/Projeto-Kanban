@@ -1,31 +1,22 @@
-## Requisitos:
+<p align="center">
+  <img src="https://i.imgur.com/kU4x8is.png" alt="Projeto Kanban em funcionamento">
+</p>
 
-# 1. Colunas de Todo, Doing e Completed;
-    Mostrar as 3 colunas (title, total de cards e os cards) ✅
+# Quadro Kanban
 
-# 2. Usuários
-    Mostrar 4 usuários com (id,nome,image alimentados por alguma API); ✅
-    Deixar selecionado 1 usuário sempre; ❔
-    Permitir alterar o usuário; ✅
+O projeto consiste na criação de um quadro Kanban interativo, desenvolvido utilizando HTML, CSS, TypeScript e Vite. O objetivo é aplicar e reforçar conceitos fundamentais de manipulação do DOM, armazenamento de dados no LocalStorage, Programação Orientada a Objetos (POO) e Promises para tornar o sistema mais dinâmico e eficiente. 
 
-# 3. Tags
-    Deve existir 3 tags ['frontend','backend','ux'] onde serão usados para criar e filtrar os cards; ✅
+## Tech Stack
 
-# 4. Cards
-    Criar um card vinculado a uma coluna, a uma tag, com descrição e data de criação; ✅
-    Novos cards devem sempre cair na coluna 'todo'; ✅
-    Deve ser possível alterar a descrição e a tag; ✅
-    Deve ser possível mover um card para outra coluna; ✅
-    Deve ser possível remover o card; ✅
+[![My Skills](https://skillicons.dev/icons?i=ts,html,css,vite,)](https://skillicons.dev)
 
-# 5. Filtros
-    Mostrar o filtro por usuário; ✅
-    Mostrar o filtro por tag; ✅
-    Dever ter um toggle de selecionar o usuário; ✅
-    Deve ter um toggle ao selecionar a tag; ✅
-    A cada clique no filtro de usuário e/ou tag, deve mostrar os cards que satisfaçam os filtros selecionados; ❔
+## Rodando o projeto
 
-# 6. Salvamento
-    Salvar os cards no localStorage; ✅
-    Salvar o usuário selecionado no localStorage; ✅
-    Salvar os filtros selecionados no localStorage; ❔
+1. **Clonando o projeto**: `git clone https://github.com/Gabrielleite00/Projeto-Kanban.git`
+2. **Entrando na pasta**: `cd Projeto-Kanban` 
+3. **Instalando dependências**: `npm install`
+4. **Executando o projeto**: `npm run dev`
+
+## Licença
+
+This software is available under the [MIT](https://rem.mit-license.org) license
