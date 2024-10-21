@@ -1,8 +1,5 @@
-export function saveTasksToLocalStorage(tasks: any[]) {
-  localStorage.setItem('kanbanTasks', JSON.stringify(tasks));
-}
+import { Task } from "../interfaces/task.interface";
 
-export function loadTasksFromLocalStorage(): any[] {
-  const storedTasks = localStorage.getItem('kanbanTasks');
-  return storedTasks ? JSON.parse(storedTasks) : [];
+export function saveTasksToLocalStorage(tasks: Task[]) {
+  localStorage.setItem('kanbanTasks', JSON.stringify(tasks));
 }

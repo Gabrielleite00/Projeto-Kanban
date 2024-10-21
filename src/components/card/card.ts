@@ -2,6 +2,15 @@ import { Task } from "../../interfaces/task.interface";
 
 export class Card {
 
+    formatData(date: Date): string {
+        const validDate = new Date(date);
+        return validDate.toLocaleDateString("pt-br", {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+        });
+    }
+    
     getBadgeColor(badge: string): string {
         let badgeColor: string = ""
         switch (badge) {
@@ -55,7 +64,7 @@ export class Card {
                     </div>
                     <span class="card-date">
                         <i class="fa-regular fa-calendar"></i>
-                        ${Intl.DateTimeFormat('pt-BR').format(task.createdAt)}
+                        ${this.formatData(task.createdAt)}
                     </span>
                 </div>
                 
